@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels in word</title>
+</head>
+<body>
+   <div>
+    <h1 id="result"></h1>
+   </div> 
+   <script>
+    let word ="strawberry"
+    console.log(word)
+    const Vowels=['a','e','i','o','u']
+    let count =0;
+    for(let char of word){
+        if(Vowels.includes(char)){
+            count++;
+        }
+    }
+    document.getElementById('result').innerText= `The word "${word}" contains ${count} vowel letters.`
+   </script>
+</body>
+</html>
